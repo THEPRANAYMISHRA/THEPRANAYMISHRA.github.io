@@ -4,11 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+    
+    <title>Pranay Mishra</title>
 </head>
 <body>
-    <h1>Hello World
-        
-    </h1>
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar" id="nav-menu" >
+            <a href="#home" class="active" id="">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="Pranay_Mishra_Resume.pdf" download class="btn"><span id="download_icon"><i class='bx bxs-download' ></i></span></a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Pranay Mishra</h1>
+            <h3>And I'm a <span>Full Stack Web Developer</span></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum dolor quia, libero numquam beatae quas aut placeat eius est quae eaque! Quidem modi dolorum perferendis fuga quisquam blanditiis laborum quas?
+            </p>
+            <div class="social-media">
+                <a href=""><i class='bx bxl-github'></i></a>
+                <a href=""><i class='bx bxl-gmail' ></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="Pranay_Mishra_Resume.pdf" download class="btn"><span id="download_icon"><i class='bx bxs-download' ></i></span>Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="profile.png" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="profile.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed repudiandae, quaerat cumque perferendis earum voluptatem libero, porro perspiciatis iusto architecto modi impedit rem labore. Saepe adipisci sit ullam expedita?
+            </p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxl-nodejs' ></i>
+                <h3>Nodejs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, veniam sequi quo illo porro harum natus nisi maiores at magnam unde aliquam laudantium quisquam ut odio voluptas. Neque, maxime fugiat?
+                </p>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-mongodb' ></i>
+                <h3>MongoDB</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, veniam sequi quo illo porro harum natus nisi maiores at magnam unde aliquam laudantium quisquam ut odio voluptas. Neque, maxime fugiat?
+                </p>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-javascript'></i>
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, veniam sequi quo illo porro harum natus nisi maiores at magnam unde aliquam laudantium quisquam ut odio voluptas. Neque, maxime fugiat?
+                </p>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="projects-container">
+            <div class="project-box">
+                <!-- 1============================================= -->
+                <img src="https://wallpapers.com/images/high/4k-office-background-z1ym74nsi02yneks.webp" alt="">
+                <div class="project-layer">
+                    <h4 class="Project-title">EXODUS TRAVELS</h4>
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quod?</p>
+                    <div class="project-tech-stack">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3' ></i>
+                        <i class='bx bxl-javascript' ></i>
+                        <i class='bx bxl-nodejs' ></i>
+                        <i class='bx bxl-mongodb'></i>
+                    </div>
+                    <div>
+                        <a href=""><i class='bx bxl-netlify' ></i></a>
+                        <a href=""><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- //2====================================================== -->
+            <div class="project-box">
+                <img src="https://wallpapers.com/images/high/4k-office-background-z1ym74nsi02yneks.webp" alt="">
+                <div class="project-layer">
+                    <h4>SNAKE TOWN</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quod?</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <!-- //3========================================================== -->
+            <div class="project-box">
+                <img src="https://wallpapers.com/images/high/4k-office-background-z1ym74nsi02yneks.webp" alt="">
+                <div class="project-layer">
+                    <h4>SNAKE TOWN</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quod?</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <!-- //4============================================================= -->
+            <div class="project-box">
+                <img src="https://wallpapers.com/images/high/4k-office-background-z1ym74nsi02yneks.webp" alt="">
+                <div class="project-layer">
+                    <h4>SNAKE TOWN</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quod?</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <div class="contact-container">
+                <div >
+                    <a href="" id="contact-github"><i class='bx bxl-github'></i>Github</a>
+                </div>
+                <div>
+                    <a href="" id="contact-email"><i class='bx bxl-gmail'></i>Gmail</a>
+                </div>
+                <div>
+                    <a href="" id="contact-linkedin"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                </div>
+                <div>
+                    <a href="" id="contact-phone"><i class='bx bxs-phone'></i>Phone</a>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copright &copy; 2023 by Pranaymishra | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-chevrons-up' ></i></a>
+        </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
