@@ -240,18 +240,17 @@ span{
     background: var(--second-bg-color);
 }
 
-.project-tech-stack a{
+.project-tech-stack i{
     display:inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius:40% 20% 40% 20% ;
-    font-size: 2rem;
-    color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    width: 5rem;
+    height: 5rem;
+    border: .2rem solid white;
+    border-radius:50%;
+    font-size: 4rem;
+    color:white;
+    margin: 1rem 1.5rem 1rem 0.5rem;
     transition: .5s ease;
 }
 
