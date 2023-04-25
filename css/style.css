@@ -40,7 +40,18 @@ body{
     z-index:100;
 }
 
-#download_icon i{
+#resume-button-1 i{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    color:black;
+    transition: .5s ease;
+}
+
+#resume-button-2 i{
     display:inline-flex;
     justify-content: center;
     align-items: center;
@@ -247,10 +258,10 @@ span{
     width: 5rem;
     height: 5rem;
     border: .2rem solid white;
-    border-radius:50%;
+    border-radius:50%; 
     font-size: 4rem;
     color:white;
-    margin: 1rem 1.5rem 1rem 0.5rem;
+    margin: 1rem 1.5rem 1rem 1rem;
     transition: .5s ease;
 }
 
@@ -288,7 +299,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(rgba(0,0,0,.1),var(--main-color));
+    background:linear-gradient(rgba(0, 0, 0, 0.663),var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,12 +307,11 @@ span{
     text-align: center;
     padding: 0  4rem;
     transform: translateY(100%);
-    /* transform: matrix(0,,1,0,0,0); */
 }
 
 .project-box:hover .project-layer{
     transform: translateY(0);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .project-layer h4{
@@ -316,14 +326,15 @@ span{
     display:inline-flex;
     justify-content:center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background: var(--text-color);
     border-radius: 50%;
+    /* border-radius:20% 40% 20% 40% ; */
 }
 
 .project-layer a i{
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--second-bg-color);
 }
 
