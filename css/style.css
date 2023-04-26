@@ -102,6 +102,7 @@ body{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+    transition:0.5s ease;
 }
 
 section{
@@ -476,6 +477,7 @@ span{
 @media screen and (max-width:841px){
     #menu-icon{
         display: block;
+        transition:0.5s ease;
     }
 
     .navbar{
@@ -489,13 +491,16 @@ span{
         border-top:.1rem solid rgba(0,0,0,.2);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
         display: none;
+        transition:0.5s ease;
     }
 
     .navbar.active{
+        transition:0.5s ease;
         display: block;
     }
 
     .navbar a{
+        transition:0.5s ease;
         display: block;
         font-size: 2rem;
         margin:3rem 0 ;
