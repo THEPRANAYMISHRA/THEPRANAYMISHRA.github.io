@@ -379,9 +379,9 @@ span{
     font-size: 2rem;
     gap:2.5rem;
     align-items: center;
-    margin-top:4rem;
-    
+    margin-top:4rem; 
 }
+
 .contact-container div{
     background: var(--second-bg-color);
     border-radius: 2rem;
@@ -525,6 +525,10 @@ span{
     }
 
     #git-stats{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .contact-container{
         grid-template-columns: repeat(1,1fr);
     }
 }
