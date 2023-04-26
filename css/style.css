@@ -14,7 +14,7 @@
     --bg-color: black;
     --second-bg-color: #15171c;
     --text-color:#fff;
-    --main-color: #39C342
+    --main-color: #39C342;
 }
 
 html{
@@ -247,6 +247,37 @@ span{
     transform: scale((1.02));
 }
 
+#git-stats{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex:1 1 30rem; */
+    padding:3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    margin:2rem 0rem 2rem 0rem;
+    transition: .5s ease;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+    place-items: center;
+}
+
+#git-stats img{
+    border: .2rem solid var(--second-bg-color);
+    border-radius:2rem;
+    margin:3rem;
+    width:100%;
+}
+
+#git-stats img:hover{
+    transition: 0.5s ease;
+    border-radius:2rem;
+    border: .2rem solid var(--main-color);
+}
+
 .projects{
     background: var(--second-bg-color);
 }
@@ -426,6 +457,10 @@ span{
     .footer{
         padding:2rem 3%;
     }
+
+    #git-stats{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 @media screen and (max-width:841px){
@@ -486,6 +521,10 @@ span{
     }
 
     .projects-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #git-stats{
         grid-template-columns: repeat(1,1fr);
     }
 }
