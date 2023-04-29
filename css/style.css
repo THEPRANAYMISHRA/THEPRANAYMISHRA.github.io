@@ -39,17 +39,17 @@ body{
     align-items: center;
     z-index:100;
 }
-#resume-button-1{
+#resume-link-1{
     color:black;
     display: inline-block;
-    padding: 0.7rem 1.6rem;
+    padding: 0.3rem 1.3rem;
     background: var(--main-color);
     border-radius:2rem 1rem 2rem 1rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     font-weight: 600;
 }
-#resume-button-1 i{
+#resume-link-1 i{
     display:inline-flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ body{
     transition: .5s ease;
 }
 
-#resume-button-2 i{
+#resume-link-2 i{
     display:inline-flex;
     justify-content: center;
     align-items: center;
@@ -116,9 +116,10 @@ section{
     align-items: center;
 }
 
-.home-img img{
+.home-img{
     width: 25vw;
-    border-radius:40% 20% 40% 20% 
+    border-radius:40% 20% 40% 20%;
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .home-content h3{
