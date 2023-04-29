@@ -39,7 +39,7 @@ body{
     align-items: center;
     z-index:100;
 }
-#resume-link-1{
+#resume-button-1{
     color:black;
     display: inline-block;
     padding: 0.3rem 1.3rem;
@@ -49,7 +49,7 @@ body{
     font-size: 1.6rem;
     font-weight: 600;
 }
-#resume-link-1 i{
+#resume-button-1 i{
     display:inline-flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ body{
     transition: .5s ease;
 }
 
-#resume-link-2 i{
+#resume-button-2 i{
     display:inline-flex;
     justify-content: center;
     align-items: center;
