@@ -8,6 +8,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    /* color: black; */
 }
 
 :root{
@@ -285,6 +286,17 @@ span{
     width:100%;
 }
 
+.js-calendar-graph-svg{
+    width:100%;
+}
+.js-calendar-graph{
+    width:100%;
+}
+
+.contrib-column contrib-column-first table-column{
+    width:100%;
+}
+
 #git-stats img:hover{
     transition: 0.5s ease;
     border-radius:2rem;
@@ -294,7 +306,6 @@ span{
 .projects{
     background: var(--second-bg-color);
 }
-
 .project-tech-stack i{
     display:inline-flex;
     justify-content: center;
@@ -520,7 +531,7 @@ span{
         font-size:5rem;
     }
 
-    .home-img img{
+    .home-img{
         width:70vw;
         margin-top:4rem;
     }
@@ -549,4 +560,11 @@ span{
     .contact-container{
         grid-template-columns: repeat(1,1fr);
     }
+
+    /* .js-calendar-graph-svg{
+        width:80%;
+    }
+    .js-calendar-graph{
+        width:80%;
+    } */
 }
