@@ -261,6 +261,10 @@ span{
     transform: scale((1.02));
 }
 
+/* .git-stats-section{
+    background: var(--second-bg-color);
+} */
+
 #git-stats{
     /* display: flex;
     justify-content: center;
