@@ -11,9 +11,6 @@
     <title>Pranay Mishra</title>
 </head>
 <body>
-    <div id="preloader">
-        <img src="omnitrix-load-removebg-preview.png" alt="" srcset="" class="rotate">
-    </div>
     <header class="header">
         <a href="#home" class="logo">Portfolio</a>
 
@@ -23,13 +20,12 @@
             <a href="#home" class="active" id="">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="#git-section">Git-stats</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
             <a href="Pranay_Mishra_Resume.pdf" download class="nav-link resume" id="resume-button-1"><span><i class='bx bxs-download' ></i></span></a>
         </nav>
     </header>
-    <!-- Home section starts here --><!-- Home section starts here --><!-- Home section starts here --><!-- Home section starts here --><!-- Home section starts here -->
+
     <section class="nav-link home" id="home">
         <div class="home-content">
             <h3>Hi,I am</h3>
@@ -56,16 +52,15 @@
 
     </section>
 
-    <!-- About section starts here --><!-- About section starts here --><!-- About section starts here --><!-- About section starts here --><!-- About section starts here -->
     <section class="nav-link about section" id="about">
         <div class="about-img">
             <img src="profile.png" alt="">
         </div>
 
         <div class="about-content">
-
-            <h2 class="section heading">About <span>Me</span></h2>
-
+            <h2 class="about section heading" >
+                About <span>Me</span>
+            </h2>
             <h3 id="user-detail-name">Frontend Developer</h3>
             <p id="user-detail-intro">A full-stack web developer who loves to create websites and web applications that people use every day. uses modern programming languages like HTML, CSS, and JavaScript to design the user interface, and also work on the server-side code that powers the website.
             </p>
@@ -73,7 +68,6 @@
         </div>
     </section>
 
-    <!-- skills section starts here --><!-- skills section starts here --><!-- skills section starts here --><!-- skills section starts here --><!-- skills section starts here -->
     <section class="nav-link skills services" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
         <div class="services-container">
@@ -81,53 +75,36 @@
             <div class="services-box skills-card">
                 <i class='bx bxl-nodejs skills-card-img' ></i>
                 <h3 class="skills-card-name">Nodejs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, veniam sequi quo illo porro harum natus nisi maiores at magnam
+                </p>
             </div>
 
             <div class="services-box skills-card">
                 <i class='bx bxl-mongodb skills-card-img' ></i>
                 <h3 class="skills-card-name">MongoDB</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, veniam sequi quo illo porro harum natus nisi maiores at magnam 
+                </p>
             </div>
 
             <div class="services-box skills-card">
                 <i class='bx bxl-javascript skills-card-img'></i>
                 <h3 class="skills-card-name" >JavaScript</h3>
-            </div>
-
-            <div class="services-box skills-card">
-                <i class='bx bxs-data'></i>
-                <h3 class="skills-card-name" >MySQL</h3>
-            </div>
-
-            <div class="services-box skills-card">
-                <i class='bx bxl-typescript'></i>
-                <h3 class="skills-card-name" >TypeScript</h3>
-            </div>
-
-            <div class="services-box skills-card">
-                <i class='bx bx-code'></i>
-                <h3 class="skills-card-name" >ExpressJs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, veniam sequi quo illo porro harum natus nisi maiores at magnam 
+                </p>
             </div>
 
         </div>
-    </section >
-
-    <!-- github section starts here --><!-- github section starts here --><!-- github section starts here --><!-- github section starts here --><!-- github section starts here -->
-    <section class="git-stats-section" id="git-section">
-        <h2 class="heading">Github<span>Stats</span></h2>
         <div id="git-stats">
             <img src="https://github-readme-streak-stats.herokuapp.com?user=THEPRANAYMISHRA&theme=github-green-purple&hide_border=true&border_radius=&date_format=j%20M%5B%20Y%5D" alt="" id="github-streak-stats">
 
-            <img src="https://camo.githubusercontent.com/ab2e89e94c2d4aa4d51d74109b8d02418326b7767db46b4aba90a8efa167cc4d/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d7468657072616e61796d69736872612673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374267468656d653d636861727472657573652d6461726b26686964655f626f726465723d74727565" alt="" srcset="" id="github-top-langs">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=thepranaymishra&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark&hide_border=true" alt="" srcset="" id="github-top-langs">
 
             <img src="https://github-readme-stats.vercel.app/api?username=THEPRANAYMISHRA&show_icons=true&theme=chartreuse-dark&hide_border=true" id="github-stats-card"  alt="">
     
         </div>
-        <div class="calendar">
-            <!-- calendar is here -->
-        </div>
     </section>
 
-    <!-- Projects section starts here --><!-- Projects section starts here --><!-- Projects section starts here --><!-- Projects section starts here --><!-- Projects section starts here -->
+    <!-- .project-title -->
     <section class="nav-link projects" id="projects">
         <h2 class="heading">Latest <span>Project</span></h2>
 
@@ -239,30 +216,5 @@
         </div>
     </footer>
     <script src="js/index.js"></script>
-    <!-- Include the library. -->
-    <script
-    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-
-    <script>
-    GitHubCalendar(".calendar", "THEPRANAYMISHRA");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "THEPRANAYMISHRA", { responsive: true});
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "THEPRANAYMISHRA", {
-        proxy (THEPRANAYMISHRA) {
-        return fetch(`https://your-proxy.com/github?user=${THEPRANAYMISHRA}`)
-        }
-    }).then(r => r.text())
-
-    </script>
 </body>
 </html>
