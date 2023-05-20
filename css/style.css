@@ -343,11 +343,11 @@ span{
     display:inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: .1rem solid white;
+    width: 5rem;
+    height: 5rem;
+    border: .2rem solid white;
     border-radius:50%; 
-    font-size: 3rem;
+    font-size: 4rem;
     color:white;
     margin: 1rem 1.5rem 1rem 1rem;
     transition: .5s ease;
@@ -601,102 +601,3 @@ span{
         width:80%;
     } */
 }
-
-/* flip card */
-.flip-card {
-    background-color: transparent;
-    width:100%;
-    height: 27rem;
-    perspective: 1000px;
-    font-family: sans-serif;
-  }
-  
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 1rem;
-  }
-
-  .flip-card-front{
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 1rem;
-  }
-  
-  .flip-card-front {
-    /* box-shadow: inset 0 0em 3em .6em #000; */
-    background-image: url("https://wallpapers.com/images/high/4k-office-background-z1ym74nsi02yneks.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--bg-color);
-    font-size: 3rem;
-  }
-  
-  .flip-card-back {
-    background: linear-gradient(120deg,var(--main-color) 30%,var(--second-bg-color) 88%,
-    var(--text-color) 40%,var(--main-color) 78%);
-    color: white;
-    transform: rotateY(180deg);
-  }
-
-  .project-deployed-link i{
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    border: .2rem solid white;
-    border-radius:50%; 
-    font-size: 4rem;
-    color:white;
-    margin: 1rem 1.5rem 1rem 1rem;
-    transition: .5s ease;
-  }
-
-  .project-github-link i{
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    border: .2rem solid white;
-    border-radius:50%; 
-    font-size: 4rem;
-    color:white;
-    margin: 1rem 1.5rem 1rem 1rem;
-    transition: .5s ease;
-  }
