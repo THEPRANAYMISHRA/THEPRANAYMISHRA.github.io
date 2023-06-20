@@ -31,3 +31,8 @@ HamburgerMenuIcon.addEventListener('click', function() {
 });
 
 // qcqwfjehczkdnfvo
+
+GitHubCalendar(".calendar", "THEPRANAYMISHRA");
+
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "THEPRANAYMISHRA", { responsive: true });
