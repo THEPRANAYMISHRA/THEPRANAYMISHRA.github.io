@@ -1,8 +1,6 @@
 # 💫 About Me:
 Full-stack web developer who possesses a deep passion for<br>creating websites and web applications that are widely used.<br>They specialize in utilizing contemporary programming<br>languages such as HTML, CSS, JavaScript, and Node.js to design<br>captivating user interfaces. Moreover, they excel in developing<br>server-side code that empowers the functionality of the websites.<br>
 
-[![](https://visitcount.itsvg.in/api?id=THEPRANAYMISHRA&icon=7&color=3)](https://visitcount.itsvg.in)
-
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/pranay-mishra-31b5a0240) 
 
