@@ -41,18 +41,25 @@ body {
 #resume-button-1 {
   color: black;
   display: inline-block;
-  padding: 0.3rem 1.3rem;
+  text-align: center; /* Added */
+  padding: 0.2rem 1.3rem;
   background: var(--main-color);
-  /* border-radius: 2rem 1rem 2rem 1rem; */
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
   font-weight: 600;
+  width: min-content;
+  margin: 0 2rem;
+  transition: 200ms ease-in-out;
 }
+
+#resume-button-1:hover {
+  box-shadow: 0;
+}
+
 #resume-button-1 i {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
   height: 3rem;
   font-size: 2rem;
   color: black;
@@ -86,7 +93,7 @@ body {
   transform: scale(1.1);
 }
 
-.navbar a {
+.navbar > a {
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
