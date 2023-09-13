@@ -1,30 +1,26 @@
-[![MasterHead](https://media.licdn.com/dms/image/C4E16AQEE9_u2AETxSg/profile-displaybackgroundimage-shrink_350_1400/0/1619798003135?e=1687392000&v=beta&t=2aIGy9EAjIbZLIxH1T5XFJcDTA17MqOUbd8-4Cyi_n0)](https://thepranaymishra.io)
-<h1 align="center">Hi 👋, I'm Pranay Mishra</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+# 💫 About Me:
+Full-stack web developer who possesses a deep passion for<br>creating websites and web applications that are widely used.<br>They specialize in utilizing contemporary programming<br>languages such as HTML, CSS, JavaScript, and Node.js to design<br>captivating user interfaces. Moreover, they excel in developing<br>server-side code that empowers the functionality of the websites.<br>
 
-<img align="right" width="400" src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966" alt="coding_img" />
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/pranay-mishra-31b5a0240) 
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=thepranaymishra&label=Profile%20views&color=0e75b6&style=flat" alt="thepranaymishra" /> </p>
+# 💻 Tech Stack:
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+# 📊 GitHub Stats:
+![](https://github-readme-streak-stats.herokuapp.com/?user=THEPRANAYMISHRA&theme=merko&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=THEPRANAYMISHRA&theme=merko&hide_border=false&include_all_commits=false&count_private=false&layout=compact)<br/>
+![](https://github-readme-stats.vercel.app/api?username=THEPRANAYMISHRA&theme=merko&hide_border=false&include_all_commits=false&count_private=false)<br/>
 
-- 🌱 I’m currently learning **Pug Html**
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=THEPRANAYMISHRA&theme=matrix&no-frame=false&no-bg=true&margin-w=4)
 
-- 👨‍💻 All of my projects are available at [https://thepranaymishra.github.io/](https://thepranaymishra.github.io/)
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
-- 💬 Ask me about **Nodejs,Expressjs,MongoDB**
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=THEPRANAYMISHRA&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
-- 📫 How to reach me **pmcanvas4501@gmail.com**
+---
+[![](https://visitcount.itsvg.in/api?id=THEPRANAYMISHRA&icon=7&color=3)](https://visitcount.itsvg.in)
 
-- 📄 Know about my experiences [https://drive.google.com/drive/folders/1mowLfSaUiXXi_zfb3rmrNQ2KiS7y0QK7?usp=sharing](https://drive.google.com/drive/folders/1mowLfSaUiXXi_zfb3rmrNQ2KiS7y0QK7?usp=sharing)
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=thepranaymishra&show_icons=true&locale=en&layout=compact" alt="thepranaymishra" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=thepranaymishra&show_icons=true&locale=en" alt="thepranaymishra" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=thepranaymishra&" alt="thepranaymishra" /></p>
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
