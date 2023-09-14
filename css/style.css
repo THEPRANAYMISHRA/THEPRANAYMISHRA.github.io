@@ -13,7 +13,7 @@
   --bg-color: black;
   --second-bg-color: #15171c;
   --text-color: #fff;
-  --main-color: rgb(0, 179, 255);
+  --main-color: #0068d1;
 }
 
 html {
@@ -49,11 +49,13 @@ body {
   font-weight: 600;
   width: min-content;
   margin: 0 2rem;
+  animation: flicker 1.5s infinite alternate;
   transition: 200ms ease-in-out;
 }
 
 #resume-button-1:hover {
   box-shadow: 0;
+  animation: stopFlicker 0s forwards;
 }
 
 #resume-button-1 i {
@@ -63,8 +65,15 @@ body {
   height: 3rem;
   font-size: 2rem;
   color: black;
-  transition: 0.5s ease;
   animation: shake 0.5s ease-in-out infinite;
+  transition: 0.5s ease;
+}
+#resume-button-2 {
+  animation: flicker 1.5s infinite alternate;
+}
+
+#resume-button-2:hover {
+  animation: stopFlicker 0s forwards;
 }
 
 #resume-button-2 i {
@@ -77,6 +86,34 @@ body {
   color: black;
   transition: 0.5s ease;
   animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 0 0 4rem var(--main-color);
+  }
+  20%,
+  22%,
+  24%,
+  55% {
+    box-shadow: none;
+  }
+}
+
+@keyframes stopFlicker {
+  0% {
+    animation-play-state: running;
+  }
+  100% {
+    animation-play-state: paused;
+  }
 }
 
 .header.sticky {
@@ -125,10 +162,21 @@ section {
   align-items: center;
 }
 
+.tilt-container {
+  perspective: 1000px;
+}
+
+.tilt-container:hover .home-img {
+  box-shadow: 1px -2px 3px 5px var(--main-color);
+  transform: rotateX(-10deg) rotateY(-10deg);
+}
+
 .home-img {
-  width: 25vw;
-  border-radius: 40% 22% 40% 22%;
-  box-shadow: 0 0 1rem var(--main-color);
+  width: 20vw;
+  border-radius: 30% 20% 30% 20%;
+  box-shadow: 1px 2px 3px 5px var(--main-color);
+  transition: transform 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes wobble {
@@ -281,10 +329,6 @@ span {
 }
 
 #git-stats {
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  /* flex:1 1 30rem; */
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
@@ -350,7 +394,7 @@ span {
 }
 
 .project-box-outer {
-  background-color: rgb(0, 179, 255);
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -359,7 +403,7 @@ span {
 
 .project-box img {
   width: 100%;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 
 .project-box:hover img {
@@ -386,7 +430,7 @@ span {
 .project-layer {
   padding: 1rem 2rem;
   text-align: center;
-  text-shadow: 2px -1px 28px rgba(0, 0, 0, 0.79);
+  text-shadow: 0px 1px 23px rgba(0, 0, 0, 0.79);
 }
 
 .project-layer h4 {
@@ -483,11 +527,6 @@ span {
   font-size: 2.4rem;
   color: var(--second-bg-color);
 }
-
-/* animation */
-/* .shaking {
-    animation: shake 0.5s ease-in-out infinite;
-  } */
 
 @keyframes shake {
   0% {
