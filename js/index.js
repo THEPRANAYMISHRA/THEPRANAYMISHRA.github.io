@@ -30,6 +30,10 @@ HamburgerMenuIcon.addEventListener('click', function () {
     navbar.classList.toggle('active')
 });
 
+function openPDF() {
+    window.open('../Pranay_Mishra_Resume.pdf', '_blank');
+}
+
+
 GitHubCalendar(".calendar", "THEPRANAYMISHRA");
-// or enable responsive functionality:
 GitHubCalendar(".calendar", "THEPRANAYMISHRA", { responsive: true });
