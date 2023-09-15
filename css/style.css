@@ -13,7 +13,8 @@
   --bg-color: black;
   --second-bg-color: #15171c;
   --text-color: #fff;
-  --main-color: #0068d1;
+  --main-color: #057ef7;
+  --main-color-deep: #0051a2;
 }
 
 html {
@@ -476,34 +477,52 @@ span {
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: 2rem;
-  gap: 2.5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
 }
 
-.contact-container div {
-  background: var(--second-bg-color);
-  border-radius: 2rem;
-  padding: 2rem 2rem 2rem;
+.contact-container textarea {
+  resize: none;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
-  cursor: pointer;
+  background-color: var(--second-bg-color);
 }
 
-.contact-container div:hover {
-  border-color: var(--main-color);
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none !important;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--main-color);
+  transition: 0.5s ease-in-out;
 }
 
-.contact-container a {
-  color: var(--text-color);
+.contact-container button {
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
 }
 
-.contact-container i {
-  margin: 0 2rem 0;
-  font-size: 3rem;
+.contact-container button:focus {
+  transform: scale(0.96);
+  background-color: var(--main-color-deep);
+}
+.contact-container button:hover {
+  background-color: var(--main-color-deep);
 }
 
 .footer {
