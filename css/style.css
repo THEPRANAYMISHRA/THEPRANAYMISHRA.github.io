@@ -477,13 +477,13 @@ span {
 }
 
 .contact-container {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
+  height: 100%;
 }
 
 .contact-container textarea {
@@ -498,6 +498,7 @@ span {
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
   background-color: var(--second-bg-color);
+  color: var(--text-color);
 }
 
 .contact-container input:focus,
@@ -598,6 +599,14 @@ span {
 
   #git-stats {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-container {
+    padding-top: 10rem;
+  }
+
+  .contact-container textarea {
+    height: 400px !important;
   }
 }
 

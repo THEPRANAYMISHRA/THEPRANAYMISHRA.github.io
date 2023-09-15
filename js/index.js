@@ -1,5 +1,9 @@
 let sections = document.querySelectorAll("section")
 let navlinks = document.querySelectorAll("header nav a")
+let contactForm = document.querySelector('.contact-container')
+let emailContact = document.getElementById("email-contact")
+let nameContact = document.getElementById("name-contact")
+let message = document.getElementById("message")
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -33,7 +37,34 @@ HamburgerMenuIcon.addEventListener('click', function () {
 function openPDF() {
     window.open('../Pranay_Mishra_Resume.pdf', '_blank');
 }
-
-
 GitHubCalendar(".calendar", "THEPRANAYMISHRA");
 GitHubCalendar(".calendar", "THEPRANAYMISHRA", { responsive: true });
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    if (message.length <= 5) {
+        return alert("Please write message in message box")
+    } else {
+        let payload = {
+            name: nameContact.value,
+            email: emailContact.value,
+            message: message.value
+        }
+        fetch('https://portfolio-1xro.onrender.com/send-email', {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        }).then((res) => {
+            console.log(res)
+        }).then((data) => {
+            console.log(data)
+        })
+            .catch((err) => {
+                console.error(err);
+            })
+    }
+})
+
+

@@ -41,11 +41,11 @@ app.post('/send-email', async (req, res) => {
                 if (error) {
                     return res.status(500).send(error.toString());
                 }
-                res.status(200).send('Email sent: ' + info.response);
+                res.status(200).send({ "Email sent": info.response });
             });
         })
         .catch((rateLimiterRes) => {
-            res.status(429).send('Too many requests');
+            res.status(429).send({ "mgs": 'Too many requests' });
         });
 });
 
