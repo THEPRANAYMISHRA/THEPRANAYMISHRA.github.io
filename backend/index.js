@@ -45,8 +45,6 @@ app.post('/send-email', async (req, res) => {
             });
         })
         .catch((rateLimiterRes) => {
-            // Not enough points to consume
-            console.log(`Rate limit exceeded for ${req.ip}`);
             res.status(429).send('Too many requests');
         });
 });
