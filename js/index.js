@@ -57,13 +57,15 @@ contactForm.addEventListener('submit', (e) => {
             },
             body: JSON.stringify(payload)
         }).then((res) => {
-            console.log(res)
-        }).then((data) => {
-            console.log(data)
+            if (res.status === 200) {
+                alert("Contact details are sent successfully")
+            } else if (res.status === 429) {
+                alert("You have exceeded the limit of sending emails per day.")
+            }
+        }).catch((err) => {
+            alert('Internal server error')
+            console.log(err)
         })
-            .catch((err) => {
-                console.error(err);
-            })
     }
 })
 

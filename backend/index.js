@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const rateLimiter = new RateLimiterMemory({
-    points: 1,
+    points: 2,
     duration: 60 * 60 * 24
 });
 
