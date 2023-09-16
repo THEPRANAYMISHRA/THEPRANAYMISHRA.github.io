@@ -19,14 +19,14 @@ const transporter = nodemailer.createTransport({
 });
 
 const rateLimiter = new RateLimiterMemory({
-    points: 2,
+    points: 3,
     duration: 60 * 60 * 24
 });
 
 app.post('/send-email', async (req, res) => {
     const { name, email, message } = req.body;
 
-    rateLimiter.consume(email, 1)
+    rateLimiter.consume(req.ip, 1)
         .then((rateLimiterRes) => {
             // 2 points consumed
             console.log(`Rate limit success for ${req.ip}`);
