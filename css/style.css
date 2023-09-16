@@ -26,6 +26,49 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+.alert {
+  z-index: 999999;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem 4rem;
+  animation: alertslide 5s infinite ease-in-out;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
+
+.success {
+  display: none;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  /* box-shadow: 3px -12px 111px 10px var(--main-color); */
+}
+
+.failed {
+  display: none;
+  background-color: red;
+  color: var(--text-color);
+  /* box-shadow: 3px -12px 111px 10px rgba(255, 0, 0, 1); */
+}
+
+@keyframes alertslide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 .header {
   position: fixed;

@@ -58,13 +58,31 @@ contactForm.addEventListener('submit', (e) => {
             body: JSON.stringify(payload)
         }).then((res) => {
             if (res.status === 200) {
-                alert("Contact details are sent successfully")
+                let successCard = document.querySelector(".success");
+                let successCardText = document.querySelector(".success p");
+                successCardText.textContent = "Mail send successfully!"
+
+                successCard.style.display = "block";
+                setTimeout(() => {
+                    successCard.style.display = "none";
+                }, 5000)
             } else if (res.status === 429) {
-                alert("You have exceeded the limit of sending emails per day.")
+                let failureCard = document.querySelector(".failed");
+                let failureCardText = document.querySelector(".failed p");
+                failureCardText.textContent = "Exceeded the limit!"
+                failureCard.style.display = "block";
+                setTimeout(() => {
+                    failureCard.style.display = "none";
+                }, 5000)
             }
         }).catch((err) => {
-            alert('Internal server error')
-            console.log(err)
+            let failureCard = document.querySelector(".failed");
+            let failureCardText = document.querySelector(".failed p");
+            failureCardText.textContent = "Internal server error!"
+            failureCard.style.display = "block";
+            setTimeout(() => {
+                failureCard.style.display = "none";
+            }, 5000)
         })
     }
 })
