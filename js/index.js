@@ -37,19 +37,27 @@ HamburgerMenuIcon.addEventListener('click', function () {
 function openPDF() {
     window.open('../Pranay_Mishra_Resume.pdf', '_blank');
 }
-GitHubCalendar(".calendar", "THEPRANAYMISHRA");
-GitHubCalendar(".calendar", "THEPRANAYMISHRA", { responsive: true });
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    if (message.length <= 5) {
-        return alert("Please write message in message box")
+    if (message.value.length <= 5) {
+        let failureCard = document.querySelector(".failed");
+        let failureCardText = document.querySelector(".failed p");
+        failureCardText.textContent = "Please write message!"
+        failureCard.style.display = "block";
+        document.getElementById("submit-btn").disabled = true;
+        setTimeout(() => {
+            failureCard.style.display = "none";
+            document.getElementById("submit-btn").disabled = false;
+        }, 5000)
+        return
     } else {
         let payload = {
             name: nameContact.value,
             email: emailContact.value,
             message: message.value
         }
+        console.log(payload)
         fetch('https://portfolio-1xro.onrender.com/send-email', {
             method: 'POST',
             headers: {
@@ -61,18 +69,21 @@ contactForm.addEventListener('submit', (e) => {
                 let successCard = document.querySelector(".success");
                 let successCardText = document.querySelector(".success p");
                 successCardText.textContent = "Mail send successfully!"
-
                 successCard.style.display = "block";
+                document.getElementById("submit-btn").disabled = true;
                 setTimeout(() => {
                     successCard.style.display = "none";
+                    document.getElementById("submit-btn").disabled = false;
                 }, 5000)
             } else if (res.status === 429) {
                 let failureCard = document.querySelector(".failed");
                 let failureCardText = document.querySelector(".failed p");
                 failureCardText.textContent = "Exceeded the limit!"
                 failureCard.style.display = "block";
+                document.getElementById("submit-btn").disabled = true;
                 setTimeout(() => {
                     failureCard.style.display = "none";
+                    document.getElementById("submit-btn").disabled = false;
                 }, 5000)
             }
         }).catch((err) => {
@@ -80,8 +91,10 @@ contactForm.addEventListener('submit', (e) => {
             let failureCardText = document.querySelector(".failed p");
             failureCardText.textContent = "Internal server error!"
             failureCard.style.display = "block";
+            document.getElementById("submit-btn").disabled = true;
             setTimeout(() => {
                 failureCard.style.display = "none";
+                document.getElementById("submit-btn").disabled = false;
             }, 5000)
         })
     }

@@ -34,8 +34,7 @@ body {
   transform: translateX(-50%);
   padding: 2rem 4rem;
   animation: alertslide 5s infinite ease-in-out;
-  border: 1px solid white;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .success {
@@ -54,10 +53,10 @@ body {
 
 @keyframes alertslide {
   0% {
-    opacity: 0;
+    opacity: 0.5;
   }
   50% {
-    opacity: 1;
+    opacity: 0.9;
   }
   70% {
     opacity: 0.8;
