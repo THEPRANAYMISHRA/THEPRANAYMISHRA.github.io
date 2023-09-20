@@ -300,6 +300,7 @@ span {
   font-weight: 600;
   align-items: center;
   color: black;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -572,6 +573,7 @@ span {
   color: white;
   font-weight: 900;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .contact-container button:focus {
@@ -580,6 +582,30 @@ span {
 }
 .contact-container button:hover {
   background-color: var(--main-color-deep);
+}
+
+.contact-container button:disabled {
+  cursor: not-allowed;
+}
+
+.loader {
+  display: block;
+  margin: auto;
+  border: 2px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 2px solid #ff7a59;
+  width: 20px;
+  height: 20px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .footer {

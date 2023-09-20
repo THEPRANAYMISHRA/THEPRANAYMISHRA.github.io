@@ -4,6 +4,7 @@ let contactForm = document.querySelector('.contact-container')
 let emailContact = document.getElementById("email-contact")
 let nameContact = document.getElementById("name-contact")
 let message = document.getElementById("message")
+let submitBtn = document.getElementById("submit-btn")
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -40,15 +41,15 @@ function openPDF() {
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    if (message.value.length <= 5) {
+    if (!message.value) {
         let failureCard = document.querySelector(".failed");
         let failureCardText = document.querySelector(".failed p");
         failureCardText.textContent = "Please write message!"
         failureCard.style.display = "block";
-        document.getElementById("submit-btn").disabled = true;
+        submitBtn.disabled = true;
         setTimeout(() => {
             failureCard.style.display = "none";
-            document.getElementById("submit-btn").disabled = false;
+            submitBtn.disabled = false;
         }, 5000)
         return
     } else {
@@ -57,7 +58,8 @@ contactForm.addEventListener('submit', (e) => {
             email: emailContact.value,
             message: message.value
         }
-        console.log(payload)
+        submitBtn.innerHTML = `<div class="loader"></div>`
+
         fetch('https://portfolio-1xro.onrender.com/send-email', {
             method: 'POST',
             headers: {
@@ -70,20 +72,22 @@ contactForm.addEventListener('submit', (e) => {
                 let successCardText = document.querySelector(".success p");
                 successCardText.textContent = "Mail send successfully!"
                 successCard.style.display = "block";
-                document.getElementById("submit-btn").disabled = true;
+                submitBtn.disabled = true;
+                submitBtn.innerText = "submit"
                 setTimeout(() => {
                     successCard.style.display = "none";
-                    document.getElementById("submit-btn").disabled = false;
+                    submitBtn.disabled = false;
                 }, 5000)
             } else if (res.status === 429) {
                 let failureCard = document.querySelector(".failed");
                 let failureCardText = document.querySelector(".failed p");
                 failureCardText.textContent = "Exceeded the limit!"
                 failureCard.style.display = "block";
-                document.getElementById("submit-btn").disabled = true;
+                submitBtn.disabled = true;
+                submitBtn.innerText = "submit"
                 setTimeout(() => {
                     failureCard.style.display = "none";
-                    document.getElementById("submit-btn").disabled = false;
+                    submitBtn.disabled = false;
                 }, 5000)
             }
         }).catch((err) => {
@@ -91,10 +95,11 @@ contactForm.addEventListener('submit', (e) => {
             let failureCardText = document.querySelector(".failed p");
             failureCardText.textContent = "Internal server error!"
             failureCard.style.display = "block";
-            document.getElementById("submit-btn").disabled = true;
+            submitBtn.disabled = true;
+            submitBtn.innerText = "submit"
             setTimeout(() => {
                 failureCard.style.display = "none";
-                document.getElementById("submit-btn").disabled = false;
+                submitBtn.disabled = false;
             }, 5000)
         })
     }

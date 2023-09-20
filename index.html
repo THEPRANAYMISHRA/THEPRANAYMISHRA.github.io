@@ -316,8 +316,20 @@
       <h2 class="heading">Contact <span>Me!</span></h2>
 
       <form class="contact-container">
-        <input type="text" placeholder="Enter Your Email" id="email-contact" />
-        <input type="text" placeholder="Enter Your Name" id="name-contact" />
+        <input
+          type="text"
+          placeholder="Enter Your Email"
+          id="email-contact"
+          required
+          pattern="/^[\w-]+(\.[\w-]+)*@[a-zA-Z\d-]+(\.[a-zA-Z\d-]+)*\.[a-zA-Z]{2,}$/"
+          title="Enter a valid email"
+        />
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          id="name-contact"
+          required
+        />
         <textarea
           name=""
           id="message"
@@ -325,7 +337,7 @@
           rows="10"
           placeholder="Enter Your Message"
         ></textarea>
-        <button type="submit" id="submit-btn">Submit</button>
+        <button type="submit" id="submit-btn">submit</button>
       </form>
     </section>
 
